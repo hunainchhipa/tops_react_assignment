@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Subtotal</title>
+</head>
+
+<body>
+    <form id="form-cart">
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price (per unit)</th>
+                    <th>Price (subtotal)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" name="product" placeholder="Product Info" class="input"></td>
+                    <td><input type="number" onchange="calc()" name="quantity[0]" placeholder="0" class="input"></td>
+                    <td><input type="number" onchange="calc()" name="price[0]" placeholder="0" class="input"></td>
+                    <td class="total">0</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="product" placeholder="Product Info" class="input"></td>
+                    <td><input type="number" onchange="calc()" name="quantity[1]" placeholder="0" class="input"></td>
+                    <td><input type="number" onchange="calc()" name="price[1]" placeholder="0" class="input"></td>
+                    <td class="total">0</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="product" placeholder="Product Info" class="input"></td>
+                    <td><input type="number" onchange="calc()" name="quantity[2]" placeholder="0" class="input"></td>
+                    <td><input type="number" onchange="calc()" name="price[2]" placeholder="0" class="input"></td>
+                    <td class="total">0</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" style="padding: 20px;">Total</td>
+                    <td class="sub-total">0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+
+</html>
+
+<script>
+    function calc() {
+
+        const formEl = document.getElementById("form-cart");
+        const elements = formEl.elements;
+        const rowCount = 3;
+        let rowSubtotals = [];
+
+        for (let i = 0; i < rowCount; i++) {
+            const rowSubtotal = elements[`price[${i}]`].value * elements[`quantity[${i}]`].value
+            rowSubtotals.push(rowSubtotal)
+        }
+
+        const subtotalEls = document.querySelectorAll(".total");
+        subtotalEls.forEach((el, i) => {
+            el.innerHTML = rowSubtotals[i]
+            // subtotalEls[i].innerHTML = rowSubtotals[i]  //also valid
+        })
+
+        const subtotal = document.querySelector(".sub-total");
+        let sum = 0;
+        for (let i = 0; i < rowSubtotals.length; i++) {
+            sum += rowSubtotals[i];
+            subtotal.innerHTML = sum;
+        }
+    }
+</script>

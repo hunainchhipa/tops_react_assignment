@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">JavaScript Events</h1>
+    <ol>
+        <li>onclick: The onclick event occurs when the user clicks on an HTML element.</li><br>
+        <button onclick="myClick()">Click Me!</button><br><br>
+
+        <li>Onkeyup: The onkeyup event occurs when the user releases a key on the keyboard.</li>
+        <p id="keyup">This text will be changed.</p>
+        <input type="text" name="" id="" onkeyup="myKeyup()"><br><br>
+
+        <li>Onmouseover: The onmouseover event occurs when the mouse pointer enters an element.</li>
+        <p id="mouover"></p>
+        <button onmouseover="onover()">Over Me!</button><br><br>
+
+        <li>Onmouseout: The onmouseout event occurs when the mouse pointer moves out of an element.</li>
+        <p id="mouout"></p>
+        <button onmouseout="onout()">Leave Me!</button><br><br>
+
+        <li>Onchange: The onchange event occurs when the value of an HTML element is changed.</li>
+        <p>Write something and click outside input tag.</p>
+        <input type="text" name="" id="alter" onchange="altered()"><br><br>
+
+        <li>Onfocuse: The onfocus event occurs when an element gets focus.</li><br>
+        <input type="text" id="focusevent" onfocus="focused()"><br><br>
+
+        <li>Onblur: The onblur event occurs when an HTML element loses focus.</li>
+        <p>Write something and click outside input tag.</p>
+        <input type="text" name="" id="blurrr" onblur="blured()">
+    </ol>
+</body>
+
+</html>
+<script>
+    function myClick() {
+        alert("This is an exapmle of onclick evnet!");
+    }
+
+    function myKeyup() {
+        document.querySelector("#keyup").innerHTML = "Text changed!";
+    }
+
+    function onover() {
+        document.querySelector("#mouover").innerHTML = "I'm Mouseover event!";
+    }
+
+    function onout() {
+        document.querySelector("#mouout").innerHTML = "I'm Mouseout event!";
+    }
+
+    function altered() {
+        let myName = document.querySelector("#alter");
+        myName.value = myName.value.toUpperCase();
+    }
+
+    function focused() {
+        document.getElementById("focusevent").style.backgroundColor = "Yellow";
+    }
+    function blured() {
+        alert("Your input element lost focus!");
+    }
+</script>

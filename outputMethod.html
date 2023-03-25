@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OutputMethod</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">JavaScript Output Method</h1>
+    <ol>
+        <li>InnerHTML: The innerHTML property sets or returns the HTML content (inner HTML) of an element.</li>
+        <p id="change"></p>
+        <button onclick="exp1()">Click Here</button> <br><br>
+
+        <li>document.write: The write() method writes directly to an open (HTML) document stream.</li><br>
+        <button onclick="exp2()">Click Here</button> <br><br>
+
+        <li>window.alert(): The alert() method is used when you want information to come through to the user.</li><br>
+        <button onclick="exp3()">Click Here</button> <br><br>
+
+        <li>console.log(): The log() method writes a message to the console.</li><br>
+        <button onclick="exp4()">Click Here</button> <br><br>
+
+        <li>window.prompt(): The prompt() method allows to take input from user.</li><br>
+        <button onclick="exp5()">Click Here</button>
+    </ol>
+</body>
+
+</html>
+
+<script>
+    function exp1() {
+        document.getElementById("change").innerHTML = "InnerHTML Example!";
+    }
+
+    function exp2() {
+        document.write("<h1>This is called document.write method!</h1> ")
+    }
+
+    function exp3() {
+        alert("This is an alert box!");
+    }
+
+    function exp4() {
+        console.log("Hello World!");
+    }
+
+    function exp5() {
+        window.prompt("Enter your Name!");
+    }
+</script>
