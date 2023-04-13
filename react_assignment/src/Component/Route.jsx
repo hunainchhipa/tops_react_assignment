@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Inc_Dec from "./Inc_Dec";
-import Table from "./ReactAssignmentTable";
+import Table from "./ReactAssignment";
 
 export default function React_Assignment() {
   return (
