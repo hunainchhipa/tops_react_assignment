@@ -16,6 +16,7 @@ export default function Inc_Dec() {
   return (
     <>
       <div className="wrapper">
+        <h1>Increment Decrement</h1>
         <h1>{count}</h1>
         <button id="incBtn" className="btn btn-primary" onClick={decrement}>
           Decrement
