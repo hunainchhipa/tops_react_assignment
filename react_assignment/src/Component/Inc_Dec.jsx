@@ -25,7 +25,7 @@ export default function Inc_Dec() {
           Increment
         </button>
         <div>
-          <button className="btn btn-primary" onClick={reset}>
+          <button className="btn btn-danger" onClick={reset}>
             Reset
           </button>
         </div>

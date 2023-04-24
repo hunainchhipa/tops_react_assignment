@@ -9,6 +9,9 @@ export default function Table() {
           <tr>
             <th colSpan="2">
               <h1>React Assignment</h1>
+              <h3>
+                <u>Module - 3 Reactjs</u>
+              </h3>
             </th>
           </tr>
         </thead>
@@ -587,6 +590,131 @@ export default function Table() {
             <td>Ans:</td>
             <td>
               <Link to="/inc_dec">Click Here!</Link>
+            </td>
+          </tr>
+          <tr>
+            <th colSpan="2">
+              <h3>
+                <u>Module - 4 Lists and Hooks</u>
+              </h3>
+            </th>
+          </tr>
+          <tr>
+            <td>Q.1</td>
+            <td>
+              Explain Life cycle in Class Component and functional component
+              with Hooks.
+            </td>
+          </tr>
+          <tr>
+            <td>Ans:</td>
+            <td>
+              In React, components are the building blocks of the user
+              interface. There are two types of components: class components and
+              functional components. <br /> <br />
+              The lifecycle of a class component is divided into three main
+              phases: mounting, updating, and unmounting. The lifecycle methods
+              are functions that are automatically called by React at specific
+              points during these phases. <br /> <br />
+              <u>Mounting phase:</u>
+              <ol>
+                <li>
+                  constructor(): This method is called when the component is
+                  first created. It is used for initializing state and binding
+                  event handlers.
+                </li>
+                <li>
+                  static getDerivedStateFromProps(): This method is called
+                  before the initial render and any subsequent renders. It is
+                  used for updating the state based on props.
+                </li>
+                <li>
+                  render(): This method is called during the initial render and
+                  any subsequent renders. It returns the JSX that represents the
+                  component on the screen.
+                </li>
+                <li>
+                  componentDidMount(): This method is called after the component
+                  is mounted in the DOM. It is used for setting up timers,
+                  making network requests, and interacting with the DOM.
+                </li>
+              </ol>
+              <u>Updating phase:</u>
+              <ol>
+                <li>
+                  static getDerivedStateFromProps(): This method is called
+                  before any subsequent renders. It is used for updating the
+                  state based on props.
+                </li>
+                <li>
+                  shouldComponentUpdate(): This method is called before
+                  rendering, and it determines if the component should re-render
+                  or not. It is used for performance optimization.
+                </li>
+                <li>
+                  render(): This method is called during subsequent renders. It
+                  returns the JSX that represents the component on the screen.
+                </li>
+                <li>
+                  componentDidUpdate(): This method is called after the
+                  component is updated in the DOM. It is used for interacting
+                  with the DOM, making network requests, and updating state
+                  based on props or state changes.
+                </li>
+              </ol>
+              <u>Unmounting phase:</u>
+              <ul>
+                <li>
+                  componentWillUnmount(): This method is called before the
+                  component is unmounted from the DOM. It is used for cleanup
+                  tasks like clearing timers and canceling network requests.
+                </li>
+              </ul>
+              <p>
+                The lifecycle of a functional component with Hooks is similar to
+                that of a class component, but it is more streamlined. Hooks are
+                functions that allow functional components to use state and
+                other React features that were previously only available to
+                class components.
+              </p>
+              <u>Mounting phase:</u>
+              <ol>
+                <li>
+                  useState(): This hook is used to declare and initialize state
+                  variables.
+                </li>
+                <li>
+                  useEffect(): This hook is used to perform side effects like
+                  fetching data, setting up timers, and updating the DOM. It
+                  replaces componentDidMount, componentDidUpdate, and
+                  componentWillUnmount methods.
+                </li>
+              </ol>
+              <u>Updating phase:</u>
+              <ol>
+                <li>
+                  useState(): This hook is used to update state variables.
+                </li>
+                <li>
+                  useEffect(): This hook is used to perform side effects like
+                  fetching data, setting up timers, and updating the DOM. It
+                  replaces componentDidMount, componentDidUpdate, and
+                  componentWillUnmount methods.
+                </li>
+              </ol>
+              <u>Unmounting phase:</u>
+              <ul>
+                <li>
+                  useEffect(): This hook is used to perform cleanup tasks like
+                  canceling timers and network requests. It replaces
+                  componentWillUnmount method.
+                </li>
+              </ul>
+              <p>
+                In summary, the lifecycle methods of a class component and the
+                Hooks used in a functional component serve the same purposes but
+                with different implementation styles.
+              </p>
             </td>
           </tr>
         </tbody>
