@@ -1,0 +1,46 @@
+{
+  "details": [
+    {
+      "id": 1,
+      "name": "John",
+      "email": "john@gmail.com",
+      "phone": "1234567890",
+      "country": "Canada"
+    },
+    {
+      "name": "Brian",
+      "email": "brian@gmail.com",
+      "phone": "23456872",
+      "country": "Brazil",
+      "id": 2
+    },
+    {
+      "name": "Dom",
+      "email": "dom@gmail.com",
+      "phone": "23456872",
+      "country": "Brazil",
+      "id": 3
+    },
+    {
+      "name": "aaaa",
+      "email": "aaa@gmail.com",
+      "phone": "4567542",
+      "country": "dsfgm",
+      "id": 4
+    },
+    {
+      "name": "qwerty",
+      "email": "qwerty@gmail.com",
+      "phone": "23456872",
+      "country": "Hungary",
+      "id": 5
+    },
+    {
+      "name": "Dev ",
+      "email": "dev@gmail.com",
+      "phone": "23456872",
+      "country": "India",
+      "id": 6
+    }
+  ]
+}

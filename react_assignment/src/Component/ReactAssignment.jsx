@@ -717,6 +717,21 @@ export default function Table() {
               </p>
             </td>
           </tr>
+          <tr>
+            <th colSpan="2">
+              <h3>
+                <u>Module - 7 React - Applying Redux</u>
+              </h3>
+            </th>
+          </tr>
+          <tr>
+            <td>Q.1</td>
+            <td>What is Redux?</td>
+          </tr>
+          <tr>
+            <td>Ans:</td>
+            <td></td>
+          </tr>
         </tbody>
       </table>
     </>
