@@ -66,7 +66,6 @@ export default function Table() {
           <tr>
             <td>Ans:</td>
             <td>
-              {" "}
               <p>
                 ReactJS and NodeJS are both JavaScript technologies. But the
                 uses of NodeJS and ReactJS are entirely different. NodeJS is a
@@ -83,7 +82,7 @@ export default function Table() {
                 can fast build complex and scalable web apps. Node is the most
                 popular platform for hosting and running web servers for React
                 apps.
-              </p>{" "}
+              </p>
             </td>
           </tr>
           <tr>
@@ -366,13 +365,13 @@ export default function Table() {
                 into projects with a single command effortless. <br /> <br />
                 <u>
                   <i>npm install -g create-react-app</i>
-                </u>{" "}
+                </u>
                 <br /> <br />
-                Use the following command to verify the installation. <br />{" "}
+                Use the following command to verify the installation. <br />
                 <br />
                 <u>
                   <i>create-react-app --version</i>
-                </u>{" "}
+                </u>
                 <br /> Here is the output <br />
                 <img
                   src="https://res.cloudinary.com/lwgatsby/f_auto/www/uploads/2023/03/image04-create-react-app-version-ouput-min.png"
@@ -391,30 +390,30 @@ export default function Table() {
                 new folder is myfirstreactapp. <br /> <br />
                 <u>
                   <i>mkdir myfirstreactapp</i>
-                </u>{" "}
+                </u>
                 <br /> <br /> After that, move inside that folder by running the
                 cd command followed by the folder name. <br /> <br />
                 <u>
                   <i>cd myfirstreactapp</i>
-                </u>{" "}
+                </u>
                 <br /> <br /> Here is the output. <br />
                 <img
                   src="https://res.cloudinary.com/lwgatsby/f_auto/www/uploads/2023/03/image05-mkdir-and-cd-to-React-app-output-min.png"
                   alt=""
-                />{" "}
+                />
                 <br /> <br />
                 Once inside your new folder, run the following command. It
                 installs all the required dependencies and creates a new folder
-                for your React app. For this tutorial, the name is yourfirstapp.{" "}
+                for your React app. For this tutorial, the name is yourfirstapp.
                 <br /> <br />
                 <u>
                   <i>create-react-app yourfirstapp</i>
-                </u>{" "}
+                </u>
                 <br /> <br />
                 <img
                   src="https://res.cloudinary.com/lwgatsby/f_auto/www/uploads/2023/03/image06-launch-create-react-app-and-name-it-min.png"
                   alt=""
-                />{" "}
+                />
                 <br /> If everything is successful, you will see a similar
                 output as below. <br />
                 <img
@@ -429,22 +428,22 @@ export default function Table() {
                 Move inside the newly created app folder. Again, this tutorial’s
                 app is yourfirstapp. Do this by running the cd yourfirstapp
                 command. Once inside your new React development environment,
-                start your first app by running the following command. <br />{" "}
+                start your first app by running the following command. <br />
                 <br />
                 <u>
                   <i>npm start</i>
-                </u>{" "}
+                </u>
                 <br />
                 <img
                   src="https://res.cloudinary.com/lwgatsby/f_auto/www/uploads/2023/03/image08-npm-start-output-min.png"
                   alt=""
-                />{" "}
+                />
                 <br /> If everything goes well, you will see a new tab with the
                 React logo opened in your default browser. <br />
                 <img
                   src="https://res.cloudinary.com/lwgatsby/f_auto/www/uploads/2023/03/image09-React.js-screen-in-browser-min.png"
                   alt=""
-                />{" "}
+                />
                 <br /> You are ready to start coding in your newly created React
                 development environment.
               </p>
@@ -462,7 +461,7 @@ export default function Table() {
               {"`npm install -g npm`"} <br /> <br />
               <u>
                 <i>Checking your version of npm and</i>
-              </u>{" "}
+              </u>
               <br /> <br />
               To see if you already have npm installed and check the installed
               version, run the following command: <br /> <br />
@@ -485,11 +484,11 @@ export default function Table() {
               <img
                 src="https://media.geeksforgeeks.org/wp-content/uploads/20210923161201/packageoutput.png"
                 alt=""
-              />{" "}
+              />
               <br />
               <u>
                 <i>Using command line</i>
-              </u>{" "}
+              </u>
               <br /> <br /> We can easily check the React version by using the
               command mentioned below on our command line. <br /> <br />
               {"`npm view react version`"}
@@ -508,62 +507,62 @@ export default function Table() {
                     To make changes to components in React.js, you typically
                     follow these steps:
                   </i>
-                </u>{" "}
+                </u>
                 <br /> <br />
                 <ol>
                   <li>
                     <u>
                       <i>Identify the component:</i>
-                    </u>{" "}
+                    </u>
                     Determine which component you want to modify. Components in
                     React.js are typically defined as JavaScript classes or
                     functions.
-                  </li>{" "}
+                  </li>
                   <br />
                   <li>
                     <u>
                       <i>Update component's code:</i>
-                    </u>{" "}
+                    </u>
                     Once you have identified the component, you can modify its
                     code according to your requirements. This may involve
                     changing the component's properties (also known as props),
                     its state, or its rendering logic.
-                  </li>{" "}
+                  </li>
                   <br />
                   <li>
                     <u>
                       <i>Save changes:</i>
-                    </u>{" "}
+                    </u>
                     After making the desired changes in the component's code,
                     save the changes in your code editor.
-                  </li>{" "}
+                  </li>
                   <br />
                   <li>
                     <u>
                       <i>Hot-reloading:</i>
-                    </u>{" "}
+                    </u>
                     In many development environments, such as Create React App
                     or React Native, React.js supports hot-reloading, which
                     means that the changes you make in the component's code will
                     be automatically reflected in the rendered output of your
                     application without needing to manually refresh the page or
                     restart the application.
-                  </li>{" "}
+                  </li>
                   <br />
                   <li>
                     <u>
                       <i>Test and verify:</i>
-                    </u>{" "}
+                    </u>
                     After saving the changes, test and verify the behavior of
                     the component in your application. Ensure that the changes
                     you made have the desired effect and do not introduce any
                     unintended issues or errors.
-                  </li>{" "}
+                  </li>
                   <br />
                   <li>
                     <u>
                       <i>Repeat if needed:</i>
-                    </u>{" "}
+                    </u>
                     If further changes are required, you can go back to step 2
                     and make additional modifications to the component's code as
                     needed.
@@ -730,7 +729,141 @@ export default function Table() {
           </tr>
           <tr>
             <td>Ans:</td>
-            <td></td>
+            <td>
+              Redux is a popular JavaScript library used for managing the state
+              of an application. It is often used in conjunction with frameworks
+              like React for building user interfaces, although it can be used
+              with other JavaScript frameworks or even in non-UI environments.
+              <br /> <br />
+              Redux follows the principles of a unidirectional data flow
+              architecture, which means that data in an application flows in a
+              single direction, making it easier to understand and debug. The
+              core concept behind Redux is a central store that holds the entire
+              state of an application as a single JavaScript object. The state
+              is read-only, and the only way to modify it is by dispatching
+              actions. <br /> <br />
+              Actions in Redux are plain JavaScript objects that describe a
+              specific event or user interaction in the application. They
+              typically have a type property indicating the type of action being
+              performed, along with any additional data required to update the
+              state. <br /> <br />
+              Reducers are functions responsible for specifying how the state
+              should change in response to dispatched actions. They take the
+              current state and an action as input and return a new state
+              object. Reducers are pure functions, meaning they don't mutate the
+              state directly but instead produce a new state based on the
+              current state and the action. <br /> <br />
+              Redux also provides a mechanism called middleware, which allows
+              you to intercept and modify actions before they reach the
+              reducers. Middleware can be used for various purposes, such as
+              logging, handling asynchronous operations, or adding additional
+              behavior to the action dispatching process. <br /> <br />
+              By using Redux, developers can have a predictable and centralized
+              state management solution for their applications, making it easier
+              to reason about how the application behaves and simplifying the
+              debugging process. Redux has gained popularity due to its
+              simplicity, scalability, and the ecosystem of tools and libraries
+              built around it.
+            </td>
+          </tr>
+          <tr>
+            <td>Q.2</td>
+            <td>What is Redux Thunk used for?</td>
+          </tr>
+          <tr>
+            <td>Ans:</td>
+            <td>
+              Redux Thunk is a middleware library for Redux that allows you to
+              write action creators that return functions instead of plain
+              action objects. This middleware enables you to handle asynchronous
+              logic, such as making API requests, inside action creators. <br />
+              <br />
+              Normally, in Redux, action creators are functions that return an
+              action object, which is then dispatched to the Redux store.
+              However, there are cases where you might need to perform
+              asynchronous operations, like fetching data from an API, before
+              dispatching an action. Redux Thunk provides a solution for
+              handling such asynchronous operations. <br /> <br />
+              Overall, Redux Thunk extends Redux by providing a middleware that
+              enables handling of asynchronous actions, allowing you to write
+              more flexible and powerful action creators in your Redux
+              application.
+            </td>
+          </tr>
+          <tr>
+            <td>Q.3</td>
+            <td>
+              What is Pure Component? When to use Pure Component over Component?
+            </td>
+          </tr>
+          <tr>
+            <td>Ans:</td>
+            <td>
+              In React, a Pure Component is a class component that provides a
+              performance optimization by implementing a shallow comparison of
+              props and state. It automatically implements a
+              shouldComponentUpdate() method, which compares the current props
+              and state with the next props and state, and only re-renders the
+              component if there are differences. <br /> <br /> The primary
+              difference between a Pure Component and a regular Component is the
+              default behavior of shouldComponentUpdate(). In a regular
+              Component, the shouldComponentUpdate() method always returns true
+              by default, triggering a re-render whenever the component receives
+              new props or its state changes. In contrast, a Pure Component
+              performs a shallow comparison of props and state, and only
+              re-renders if there are changes detected. <br /> <br />
+              <i>When to use Pure Component over Component:</i> <br /> <br />
+              <ol>
+                <li>
+                  <b>Performance Optimization:</b> Pure Components are useful
+                  when you want to optimize the performance of your application.
+                  By default, they reduce unnecessary re-renders by avoiding
+                  updates when props and state remain unchanged. This can be
+                  beneficial in scenarios where components have expensive
+                  rendering logic or when rendering frequently.
+                </li>
+                <li>
+                  <b>Stateless Components:</b> If your component doesn't have
+                  any internal state and relies solely on props, using Pure
+                  Components can be a good choice. Stateless functional
+                  components (SFCs) are automatically treated as pure components
+                  in React, as they don't have state or lifecycle methods. By
+                  using Pure Components for such components, you can ensure
+                  optimal rendering performance without the need to write a
+                  shouldComponentUpdate() method.
+                </li>
+                <li>
+                  <b>Immutable Data:</b> Pure Components work best when the data
+                  passed through props or state is immutable. Since the shallow
+                  comparison relies on reference equality, any changes to nested
+                  objects or arrays may not be detected by the comparison. To
+                  ensure proper detection of changes, it's important to use
+                  immutable data structures or immutable update patterns, such
+                  as using libraries like Immutable.js or immutability helpers.
+                </li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td>Q.4</td>
+            <td>
+              What is the second argument that can optionally be passed
+              tosetState and what is its purpose?
+            </td>
+          </tr>
+          <tr>
+            <td>Ans:</td>
+            <td>
+              In React, the second argument that can optionally be passed to the
+              `setState` function is a callback function. This callback function
+              is executed after the state update is applied and the component
+              has been re-rendered. <br /> <br />
+              The purpose of the callback function is to perform additional
+              operations that depend on the updated state or need to be executed
+              after the component has re-rendered. It provides a way to handle
+              side effects or access the updated state immediately after it has
+              been applied.
+            </td>
           </tr>
         </tbody>
       </table>
