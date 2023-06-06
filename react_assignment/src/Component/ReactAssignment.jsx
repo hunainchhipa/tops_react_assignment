@@ -718,6 +718,26 @@ export default function Table() {
           </tr>
           <tr>
             <th colSpan="2">
+              <u>
+                <h3>Module - 6 React Router</h3>
+              </u>
+            </th>
+          </tr>
+          <tr>
+            <td>Q.1</td>
+            <td>
+              Create React app with modules and lazy loading (Admin-user module
+              with child router and outlet).
+            </td>
+          </tr>
+          <tr>
+            <td>Ans:</td>
+            <td>
+              <Link to="/lazyload">Click Here...</Link>
+            </td>
+          </tr>
+          <tr>
+            <th colSpan="2">
               <h3>
                 <u>Module - 7 React - Applying Redux</u>
               </h3>
